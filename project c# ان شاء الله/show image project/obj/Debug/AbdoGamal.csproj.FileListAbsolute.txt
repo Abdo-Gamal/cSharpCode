@@ -1,0 +1,20 @@
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\bin\Debug\prohect_.exe.config
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\bin\Debug\prohect_.exe
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\bin\Debug\prohect_.pdb
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\AbdoGamal.Form1.resources
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.Properties.Resources.resources
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\AbdoGamal.csproj.GenerateResource.cache
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\AbdoGamal.csproj.CoreCompileInputs.cache
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.exe
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.pdb
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\AbdoGamal.csprojAssemblyReference.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\bin\Debug\prohect_.exe.config
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\bin\Debug\prohect_.exe
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\bin\Debug\prohect_.pdb
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\AbdoGamal.csprojAssemblyReference.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\AbdoGamal.Form1.resources
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\prohect_.Properties.Resources.resources
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\AbdoGamal.csproj.GenerateResource.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\AbdoGamal.csproj.CoreCompileInputs.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\prohect_.exe
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\مشروع البرمجة المرئية  الاسم  عبدالرحمن جمال احمد   الفرقة الثالت    القسم  علوم الحاسب الشعبة عام\obj\Debug\prohect_.pdb
