@@ -1,0 +1,10 @@
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\bin\Debug\prohect_.exe.config
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\bin\Debug\prohect_.exe
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\bin\Debug\prohect_.pdb
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\project_.csprojAssemblyReference.cache
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.Form1.resources
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.Properties.Resources.resources
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\project_.csproj.GenerateResource.cache
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\project_.csproj.CoreCompileInputs.cache
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.exe
+C:\Users\ITC\Desktop\project c# ان شاء الله\prohect_\obj\Debug\prohect_.pdb

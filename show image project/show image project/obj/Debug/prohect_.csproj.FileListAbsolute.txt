@@ -1,0 +1,10 @@
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\bin\Debug\prohect_.exe.config
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\bin\Debug\prohect_.exe
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\bin\Debug\prohect_.pdb
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.csprojAssemblyReference.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.Form1.resources
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.Properties.Resources.resources
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.csproj.GenerateResource.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.csproj.CoreCompileInputs.cache
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.exe
+F:\تالته حاسبات\برمجة مرئية\project c# ان شاء الله\prohect_\obj\Debug\prohect_.pdb
