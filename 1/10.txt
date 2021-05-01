@@ -1,0 +1,26 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string x = Console.ReadLine();
+            string y = Console.ReadLine();
+
+            int r = int.Parse(x);
+            int l = int.Parse(y);
+
+            for(int i = r; i <=l ; i++)
+            {
+                Console.Write((char)i+" ");
+
+            }
+
+
+        }
+    }
+}

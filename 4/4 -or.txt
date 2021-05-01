@@ -1,0 +1,63 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class StringToUnicodeCharLiteral
+
+    {
+        static void Main()
+        {
+            Console.Write("Enter a few words (separated by spaces): ");
+            string[] words = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            Array.Sort(words);
+
+            Console.WriteLine("\nWords sorted in alphabetical order:\n");
+            foreach( var  it in words)
+            {
+                WriteLine("-" + it);
+
+            }
+        }
+
+    }
+}
+
+===========================================important
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        string GetEscapeSequence(char c)
+        {
+            return "\\u" + ((int)c).ToString("X4");
+        }
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a few words (separated by spaces): ");
+            string[] words = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+
+            Array.Sort(words);
+            Console.WriteLine("\nWords sorted in alphabetical order:\n{0}\n",
+
+              string.Join("\n", words));
+
+               //  string.Join("\n", words.Select(x => x )));
+
+        }
+    }
+   }
+
+
+
+

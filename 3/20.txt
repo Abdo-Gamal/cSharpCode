@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Factorial
+    {
+  
+        
+
+            static void Main()
+            {
+                Console.Write("Enter a number (0 < N < 20): ");
+                byte n = byte.Parse(Console.ReadLine());
+
+                Console.WriteLine();
+                for (int row = 1; row <= n; row++)
+                {
+                    for (int col = row; col <= row + n - 1; col++)
+                    {
+                        Console.Write("{0,3}", col); // i dont no this stetment
+
+                    }
+
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+
+
+        
+
+
+    }
+    }
+
+
+

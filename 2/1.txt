@@ -1,0 +1,24 @@
+using System;
+
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare a");
+            int a = int.Parse(ReadLine());
+
+            WriteLine("entare b");
+            int b = int.Parse(ReadLine());
+
+            WriteLine("entare c");
+            int c = int.Parse(ReadLine());
+
+            long ans = b * b - 4 * a * c;
+
+            WriteLine(" the Determinant  is = "+ans);
+        }
+    }
+}

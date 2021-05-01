@@ -1,0 +1,21 @@
+using System;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(" enter 3  char  tf ");
+
+            string x = Console.ReadLine();
+            string y = Console.ReadLine();
+            string z = Console.ReadLine();
+
+
+
+            Console.WriteLine(z+ " " + x+" "+y);
+
+        }
+    }
+}

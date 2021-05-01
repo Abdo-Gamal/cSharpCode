@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            WriteLine("Enter a cordiant x ");
+            double x= double.Parse(ReadLine());
+
+            WriteLine("Enter a cordiant y ");
+            double y = double.Parse(ReadLine());
+            if(x*x+y*y<=25)//r=5
+            { 
+                WriteLine("\n point({0},{1})  is insite circute",x,y);
+            }
+            else
+                WriteLine("\n point({x},{y})  is outsite circute", x, y);
+        }
+    }
+}

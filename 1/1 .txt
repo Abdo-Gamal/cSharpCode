@@ -1,0 +1,71 @@
+using System;
+using System.Linq;
+using System.Text;
+using System.Text;
+
+using System.Diagnostics;
+using static System.Math;
+using static System.Console;
+
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int t = Convert.ToInt32(ReadLine());
+            while (t > 0)
+            {
+                decimal x = Convert.ToDecimal(ReadLine());
+              
+                if (x >= sbyte.MinValue && x <= sbyte.MaxValue)
+                {
+                    SByte _x = Convert.ToSByte(x);
+                    WriteLine("sbyte " + _x);
+                }
+                else if (x >= byte.MinValue && x <= byte.MaxValue)
+                {
+                    byte _x = Convert.ToByte(x);
+                    WriteLine("byte " + _x);
+                }
+                else if (x >= short.MinValue && x <= short.MaxValue)
+                {
+                    short _x = Convert.ToInt16(x);
+                    WriteLine("short " + _x);
+                }
+                else if (x >= ushort.MinValue && x <= ushort.MaxValue)
+                {
+                    ushort _x = Convert.ToUInt16(x);
+                    WriteLine("Ushort " + _x);
+                }
+                else if (x >= int.MinValue && x <= int.MaxValue)
+                {
+                    int _x = Convert.ToInt32(x);
+                    WriteLine("Int " + _x);
+                }
+                else if (x >= uint.MinValue && x <= uint.MaxValue)
+                {
+                    uint _x = Convert.ToUInt32(x);
+                    WriteLine("Uint " + _x);
+                }
+                else if (x >= long.MinValue && x <= long.MaxValue)
+                {
+                    long _x = Convert.ToInt64(x);
+                    Console.WriteLine("long " + _x);
+                }
+                else if (x >= ulong.MinValue && x <= ulong.MaxValue)
+                {
+                    ulong _x = Convert.ToUInt64(x);
+                    Console.WriteLine("ulong " + _x);
+                }
+
+
+
+                t--;
+            }
+        }
+    }
+}

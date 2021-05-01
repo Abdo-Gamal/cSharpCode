@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            WriteLine("Enter a n");
+            int n = int.Parse(ReadLine());
+
+            Console.WriteLine("Third bit of {0} is {1}", n, (n >> 3) & 1);
+
+        }
+    }
+}

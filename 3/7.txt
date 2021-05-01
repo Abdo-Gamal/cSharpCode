@@ -1,0 +1,54 @@
+using System;
+using System.Linq;
+using System.Text;
+using System.Text;
+
+using System.Diagnostics;
+using static System.Math;
+using static System.Console;
+
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            UInt32 x = Convert.ToUInt32(ReadLine());   // must   UInt32
+            UInt32 y = Convert.ToUInt32(ReadLine());
+
+            string binx = Convert.ToString(x,2);
+            string biny = Convert.ToString(y, 2);
+             binx=  binx.PadLeft(32,'0');
+            biny= biny.PadLeft(32, '0');
+
+            WriteLine(binx);
+            WriteLine(biny);
+
+            char[] arr_x = new char[33];
+            char[] arr_y = new char[33];
+            arr_x = binx.ToArray();
+            arr_y = biny.ToArray();
+
+            byte step = Convert.ToByte(ReadLine());   // should   UInt32
+            byte idx = Convert.ToByte(ReadLine());
+            byte idy = Convert.ToByte(ReadLine());
+
+            for (int i = 0; i < step; i++)
+            {
+                char tem = arr_x[32 - i - 1-idx];
+                arr_x[32 - i - 1]= arr_y[32 - i - 1-idy];
+                arr_y[32 - i - 1 - idy] = tem;
+            }
+            WriteLine();
+
+            WriteLine(arr_x);
+            WriteLine(arr_y);
+
+
+        }
+    }
+}
+

@@ -1,0 +1,45 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class EncodingAndDecodingOfWord
+    {
+        static void Main()
+        {
+            Console.Write("Enter a string: ");
+            string word = Console.ReadLine(); // Example: Processing
+
+            Console.Write("Enter a KEY (characters on one line - without spaces): ");
+            string key = Console.ReadLine(); // Example: ab
+
+            Console.WriteLine("\nEncryption: {0}", Encrypt(word, key));
+
+            Console.WriteLine("\nEncryption + decryption: {0}\n", Decrypt(Encrypt(word, key), key));
+        }
+
+        static string Encrypt(string word, string key)
+        {
+            StringBuilder cipher = new StringBuilder();
+
+            for (int i = 0; i < word.Length; i++)
+                cipher.Append((char)(word[i] ^ key[i % key.Length]));
+
+            return cipher.ToString();
+        }
+
+        static string Decrypt(string word, string key)
+        {
+            return Encrypt(word, key);
+        }
+    
+
+
+
+}
+}
+
+

@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Specialized;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare n");
+            int n = int.Parse(ReadLine());
+
+           for(int i = 2; i <= (int)Math.Sqrt(n); i++)
+            {
+                if (n % i==0)
+                {
+                    Write(i+" ");
+                    if(i*i!=n)
+                        Write(n/i+" ");
+
+                }
+
+            }
+        }
+    }
+}

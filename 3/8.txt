@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+       
+        static void Main(string[] args)
+        {
+
+            Console.Write("Enter a number ");
+
+            BigInteger first = 0, second = 1, next=0;
+            int cnt = 0;
+            for (int i = 0; i < 100; i++)
+            {
+                Write(first +(i<99?" : ":"\n"));
+                next = second + first;
+                first = second;
+                second = next;
+                cnt++;
+            }
+            Write(cnt);
+        }
+
+    }
+}

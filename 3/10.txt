@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            a = Convert.ToInt32(ReadLine());
+            b = Convert.ToInt32(ReadLine());
+            c= Convert.ToInt32(ReadLine());
+
+            if (a > b )
+            {
+                if (a > c)
+                    WriteLine(a);
+                else
+                    WriteLine(c);
+
+            }
+           else  if (b > a)
+            {
+                if (b > c)
+                    WriteLine(b);
+                else
+                    WriteLine(c);
+
+            }
+           else if (c > a)
+            {
+                if (c > b)
+                    WriteLine(c);
+                else
+                    WriteLine(b);
+
+            }
+            else
+                WriteLine(b);
+
+            WriteLine("***************");
+
+            int mx = Math.Max(a,Math.Max(c,b));
+            WriteLine(mx);
+
+        }
+
+    }
+}

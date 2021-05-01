@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using static System.Console;
+using static System.Math;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+
+        static bool IsValidExpression(string str)
+        {
+
+            Stack<char> st = new Stack<char>();
+
+            if (str.Contains("()")) return false;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '(')
+                    st.Push('(');
+                else if (str[i] == ')')
+                {
+                    if (st.Count == 0) return false;
+                    else
+                    st.Peek();
+                }
+
+
+            }
+            if (st.Count==0)
+                return true;
+            else
+                return true;
+
+        }
+        static void Main(string[] args)
+        {
+            WriteLine("enter exp ");
+            string str = ReadLine();
+
+           bool ok= IsValidExpression(str);
+            WriteLine("  the exp is{0}  ",ok==true?" accept ":" not accept");
+        }
+    }
+}

@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            WriteLine("entare str");
+           
+            string str = ReadLine();
+            string t =str;
+
+            t = new string( t.Reverse().ToArray());
+            bool ok=(t==str);
+
+            if (ok)
+            {
+               for(int i = 0; i < str.Length; i++)
+                    Write(str[i] + " ");
+
+                string spac="";
+               spac= spac.PadLeft(2*(str.Length-2)+1,'*' );
+
+                WriteLine();
+                for (int i = 1; i < str.Length-1; i++)
+                {
+                    WriteLine(str[i]+spac+ str[i]);
+                }
+
+                for (int i = 0; i < str.Length; i++)
+                    Write(str[i] + " ");
+
+
+            }
+            else
+                Write("NOT A PALINDROME \n");
+                
+
+        }
+    }
+}

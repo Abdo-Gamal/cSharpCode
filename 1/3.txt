@@ -1,0 +1,27 @@
+using System;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            String str = "Software University";
+            char   ch1= 'B';
+            char ch2 = 'y';
+            char ch3 = 'e';
+            String str2 = "I love programming";
+
+            Console.WriteLine(
+                str +
+               ch1+
+               ch2+
+               ch3+
+               str2
+                );
+
+
+        }
+    }
+}

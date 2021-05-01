@@ -1,0 +1,26 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string x = Console.ReadLine();
+           
+
+            int xx= int.Parse(x);
+
+            string bin = Convert.ToString(xx,2);
+            string hix = Convert.ToString(xx, 16);
+
+            Console.WriteLine("hixadicimal "+hix +"\n");
+            Console.WriteLine("binary " + bin + "\n");
+
+
+
+        }
+    }
+}

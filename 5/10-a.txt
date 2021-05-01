@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp12
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int d1 = ((int.Parse(input1.Text)) + 7) % 10;
+            int d2 = ((int.Parse(input2.Text)) + 7) % 10;
+            int d3 = ((int.Parse(input3.Text)) + 7) % 10;
+            int d4 = ((int.Parse(input4.Text)) + 7) % 10;
+
+            output1.Text = d3+"";
+            output2.Text = d4 + "";
+            output3.Text = d1 + "";
+            output4.Text = d2 + "";
+        }
+    }
+}

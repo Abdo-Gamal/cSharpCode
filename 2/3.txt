@@ -1,0 +1,17 @@
+using System;
+
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare m");
+            int m = int.Parse(ReadLine());
+
+          
+            WriteLine("y = "+m+"*x+b");
+        }
+    }
+}

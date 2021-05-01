@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Factorial
+    {
+        static void Main()
+        {
+            Console.WriteLine("You should to enter two numbers (K > N > 1)");
+
+            Console.Write("-> N: ");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.Write("-> K: ");
+            int k = int.Parse(Console.ReadLine());
+
+            if (k < n || n < 1 || k < 1)
+            {
+                Console.WriteLine("\nWrong input! ?he condition is not satisfied (K > N > 1)...\n");
+                return;
+            }
+
+            BigInteger factorial = 1;
+            // ans for k!/(k-n)!
+            for (int i = k - n + 1; i <= k; i++)
+            {
+                factorial *= i;
+
+
+                  
+            }
+              int ii = 2;
+               while (ii <= n)
+               {
+                 factorial *= ii;
+                 ii++;
+               }
+
+            Console.WriteLine("\nResult: {0}!*{1}!/({1}-{0})! = {2}\n", n, k, factorial);
+        }
+    }
+
+}
+

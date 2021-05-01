@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+        static byte IsBitOne(int number, byte bitPosition)
+            {
+                byte bit = (byte)((number >> bitPosition) & 1);
+                return bit;
+            }
+
+        static void Main(string[] args)
+        {
+
+            Console.Write("Enter a number ");
+            int v = int.Parse(ReadLine());
+
+            Console.Write("Enter a posion ");
+            byte p = byte.Parse(ReadLine());
+
+            
+
+            WriteLine("bit in posion {0} int {1} is : {2}",p,v, IsBitOne(v,p));
+        }
+
+    }
+}

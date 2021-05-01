@@ -1,0 +1,26 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare n");
+            long n = int.Parse(ReadLine());
+
+            long firest =n*(n-1)+1 ;
+            long sum = firest;
+            n = n * n * n;
+            while (n >sum )
+            {
+                Write(firest + " ");
+                sum += firest;
+                firest += 2;
+
+            }
+        }
+    }
+}

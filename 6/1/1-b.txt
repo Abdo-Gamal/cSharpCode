@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {            
+                int j, k, row, r = 1;
+                Console.Write("Enter the no. of row: ");
+                row = Convert.ToInt32(Console.ReadLine());
+
+                for (; row >= 1; row--, r++)
+                {
+                    for (j = row; j >= 1; j--)
+                        Console.Write(" ");
+
+                    for (j = 1; j <= r; j++)
+                        Console.Write(j);
+
+                    for (k = r - 1; k >= 1; k--)
+                        Console.Write(k);
+
+                    Console.WriteLine();
+                }
+            
+        }
+    }
+}

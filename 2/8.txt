@@ -1,0 +1,26 @@
+using System;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare n");
+            int n = int.Parse(ReadLine());
+            while (n != 1)
+            {
+                Write(n+" ");
+                if (n % 2 == 0)
+                {
+                    n /= 2;
+                }
+                else
+                    n = n * 3 + 1;
+
+            }
+            Write(1);
+        }
+    }
+}

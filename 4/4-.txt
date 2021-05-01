@@ -1,0 +1,29 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class StringToUnicodeCharLiteral
+
+    {
+        static void Main()
+        {
+            Console.Write("Enter a few words (separated by spaces): ");
+            string[] words = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            Array.Sort(words);
+
+            Console.WriteLine("\nWords sorted in alphabetical order:\n");
+            foreach( var  it in words)
+            {
+                WriteLine("-" + it);
+
+            }
+        }
+
+    }
+}
+
+

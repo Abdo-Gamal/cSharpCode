@@ -1,0 +1,22 @@
+using System;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string x = Console.ReadLine();
+            string y = Console.ReadLine();
+
+
+            string tem = x;
+            x = y;
+            y = tem;
+
+            Console.WriteLine(x + " " + y);
+
+        }
+    }
+}

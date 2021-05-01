@@ -1,0 +1,31 @@
+using System;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare n");
+            int l = 2400;
+            int r = 2800;
+
+            for (int i = l; i < r; i++)
+            {
+                int cnt = 0;
+                for (int j = 2; j < 11; j++)
+                {
+                    if (i % j == j - 1) cnt++;
+                }
+                if (cnt == 9)
+                {
+                    WriteLine("The number is "+ i);
+                    break;
+                }
+               
+              
+            }
+        }
+    }
+}

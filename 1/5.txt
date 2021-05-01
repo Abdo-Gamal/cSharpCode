@@ -1,0 +1,20 @@
+using System;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string st = Console.ReadLine();
+
+
+            bool ok = Convert.ToBoolean(st);
+
+            if (ok) Console.WriteLine("Yes");
+            else Console.WriteLine("No");
+
+        }
+    }
+}

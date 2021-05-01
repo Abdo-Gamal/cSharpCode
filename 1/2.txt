@@ -1,0 +1,19 @@
+using System;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            float y = 1.60217657f;
+            double x = 3.141592653589793238;
+
+            decimal z = "7.8184261974584555216535342341";  ///  not sure
+            Console.WriteLine(
+                x+ "\n" + y + "\n" + z);
+
+        }
+    }
+}

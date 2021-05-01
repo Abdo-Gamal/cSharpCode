@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+
+        static void Main()
+        {
+            WriteLine(" enter  size of list ");
+            int n = Convert.ToInt32(ReadLine());
+            List<int> subset = new List<int>();
+            WriteLine(" enter  element of list ");
+
+            for (int i = 0; i < n; i++)
+            {
+                subset.Add(Convert.ToInt32(ReadLine()));
+
+            }
+            List<int> ans = new List<int>();
+
+            for (int i = 1; i<(2 << (n-1)) ; i++) // ((long)(Math.Pow(2,n))
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (( (i >> j) & 1) == 1 )
+                    {
+                        ans.Add(subset[j]);
+                    }
+
+                }
+                if (ans.Sum() == 0 && ans.Count > 1)
+                {
+                    Write("Zero sum : ");
+                    foreach (var it in ans) // var ==data type of  varuble
+                    {
+                        Write(it + " ");
+                    }
+                    WriteLine(" = 0");
+
+                }
+                ans.Clear();
+            }
+
+        }
+    }
+}

@@ -1,0 +1,17 @@
+using System;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string st = Console.ReadLine();
+
+            int x = Convert.ToInt32(st, 16);
+            Console.WriteLine(x);
+
+        }
+    }
+}

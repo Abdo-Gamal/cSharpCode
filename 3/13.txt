@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+
+        static void Main()
+        {
+            WriteLine(" enter  input ");
+            short digit;
+
+            if ( !short.TryParse(ReadLine(), out digit) || digit > 9 || digit <= 0)
+            {
+                Console.WriteLine("\nError! Input value was not in allowable range [1;9]...\n");
+                return;
+            }
+
+
+            if (digit >= 1&& digit <= 3)
+                WriteLine( " ans = "+ digit * 10 );
+
+               else if (digit >= 4 && digit < 7)
+                    WriteLine(" ans = " + digit * 100);
+              else  if (digit >= 7 && digit < 10)
+                    WriteLine(" ans = " + digit * 1000);
+          
+            
+
+
+
+
+        }
+    }
+}

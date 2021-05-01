@@ -1,0 +1,28 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class StringToUnicodeCharLiteral
+    {
+        static void Main()
+        {
+            Console.Write("Enter a string: ");
+            string word = Console.ReadLine();
+
+            Console.WriteLine("\nResult -> {0}\n", ConvertToUnicode(word));
+        }
+
+        static string ConvertToUnicode(string word)
+        {
+            string result = string.Empty;
+
+            for (int i = 0; i < word.Length; i++)
+                result += string.Format("\\u{0:X4}", (int)word[i]);
+
+            return result;
+        }
+    }
+}

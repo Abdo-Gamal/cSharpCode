@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Factorial
+    {
+           static  int euclid(int a, int b)
+            {
+                // if the remainder is 0, return second number
+                if (b == 0)
+                    return a;
+
+                int q = a / b;        // quotient 
+                int r = a - q * b;    // remainder
+
+                // or we can simply use a % b to calculate r
+
+                // a becomes b and b becomes r (a % b)
+                return euclid(b, r);
+            }
+        static void Main()
+        {
+
+            WriteLine("enter first");
+            int a= int.Parse(ReadLine());
+
+            WriteLine("enter second ");
+            int b= int.Parse(ReadLine());
+
+           int ans= euclid((int)Math.Max(a, b), (int)Math.Min(a, b));
+
+            WriteLine(" = "+ans);
+
+        }
+    }
+
+}
+

@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Write("Enter a number (greater than 99): ");
+            int n = int.Parse(ReadLine());
+
+            WriteLine("Third digit of {0} is 7: {1}", n, n / 100 % 10 == 7);
+
+           
+
+        }
+    }
+}

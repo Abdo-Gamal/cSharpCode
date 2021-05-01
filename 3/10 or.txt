@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+
+        static void Main()
+        {
+            WriteLine("Enter three numbers: ");
+            Write("   1: "); decimal first = decimal.Parse(ReadLine());
+            Write("   2: "); decimal second = decimal.Parse(ReadLine());
+            Write("   3: "); decimal third = decimal.Parse(ReadLine());
+
+            if (first > second)
+            {
+                if (second > third)
+                {
+                    Console.WriteLine("\nBiggest number: {0}\n", first);
+                }
+                else if (third > second)
+                {
+                    if (third > first)
+                    {
+                        Console.WriteLine("\nBiggest number: {0}\n", third);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nBiggest number: {0}\n", first);
+                    }
+                }
+            }
+            else if (second > third)
+            {
+                Console.WriteLine("\nBiggest number: {0}\n", second);
+            }
+            else
+            {
+                Console.WriteLine("\nBiggest number: {0}\n", third);
+            }
+        }
+
+    }
+}

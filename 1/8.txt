@@ -1,0 +1,28 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string x = Console.ReadLine();
+            string y = Console.ReadLine();
+
+            double w = Double.Parse(x);
+            double h = Double.Parse(y);
+
+            double dia = Math.Sqrt(w * w + h * h);
+
+            Console.WriteLine("perimeter= " + 2*(h + w) + "\n");
+
+            Console.WriteLine("area= " + h*w + "\n");
+
+            Console.WriteLine("dia = "+dia+"\n");
+
+
+        }
+    }
+}

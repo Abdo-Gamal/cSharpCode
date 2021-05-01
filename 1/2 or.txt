@@ -1,0 +1,47 @@
+using System;
+using System.Linq;
+using System.Text;
+using System.Text;
+
+using System.Diagnostics;
+using static System.Math;
+using static System.Console;
+
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int t = Convert.ToInt32(ReadLine());
+            while (t > 0)
+            {
+                decimal f = Convert.ToDecimal(ReadLine());
+                decimal mnf = (float.MinValue)M;
+
+                if ( f >= mnf && f <=(float.MaxValue))
+                {
+                    float _f = Convert.ToSingle(f);
+                    Console.WriteLine(_f);
+                }
+                else if (f>= double.MinValue && f <= double.MaxValue)
+                {
+                    double _d = Convert.ToDouble(f);
+                    Console.WriteLine(_d);
+                }
+                else if (f>= decimal.MinValue && f <= decimal.MaxValue)
+                {
+                    decimal _x = Convert.ToDecimal(f);
+                    Console.WriteLine("decimal " + _x);
+                }
+            }
+
+
+            t--;
+            }
+        }
+    }
+}

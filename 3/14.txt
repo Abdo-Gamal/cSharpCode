@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+
+        static void Main()
+        {
+            WriteLine(" enter number of input ");
+            byte n = Convert.ToByte(ReadLine());
+
+            long mx = long.MinValue;
+            for(int i = 0; i < n; i++)
+            {
+                long tem= Convert.ToInt64( ReadLine());
+                mx = Math.Max(tem, mx);
+            }
+            WriteLine(" max element  is = "+mx);
+
+
+        }
+    }
+}

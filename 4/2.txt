@@ -1,0 +1,30 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
+using static System.Console;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            WriteLine(" enter statement ):");
+            string str =ReadLine();
+            // Text must contains sigh in the end('.', '!', '?' etc)
+            char sigh = str[str.Length - 1];
+            str = str.Remove(str.Length - 1, 1);
+
+
+            string[] world = str.Split(new char[ ]{' '}, StringSplitOptions.RemoveEmptyEntries);
+
+            Array.Reverse(world);
+
+            WriteLine("Result: {0} {1}\n", string.Join(" ", world), sigh);
+
+        }
+    }
+}

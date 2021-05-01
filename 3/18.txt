@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Factorial
+    {
+  
+        static void Main()
+        {
+            for(int color = 1; color <= 4; color++)
+            {
+                for(int j = 1; j <= 13; j++)
+                {
+                    switch (j)
+                    {
+
+                        case 1:Write("Ace "); break;
+                        case 2: Write("two "); break;
+                        case 3: Write("three "); break;
+                        case 4: Write("four "); break;
+                        case 5: Write("five "); break;
+                        case 6: Write("six "); break;
+                        case 7: Write("seven "); break;
+                        case 8: Write("Eight "); break;
+                        case 9: Write("night "); break;
+                        case 10: Write("ten "); break;
+                        case 11: Write("Knave "); break;
+                        case 12: Write("King "); break;
+                        case 13: Write("Queun "); break;
+
+
+
+                    }
+                    switch (color)
+                    {
+                        case 1: Console.Write(" of Spades\n"); break;
+                        case 2: Console.Write(" of Diamonds\n"); break;
+                        case 3: Console.Write(" of Hearts\n"); break;
+                        case 4: Console.Write(" of Clubs\n"); break;
+                        default: Console.Write(" Error!\n"); break;
+                    }
+
+
+                }
+
+            }
+        
+
+        }
+    }
+
+}
+

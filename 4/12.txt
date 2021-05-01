@@ -1,0 +1,45 @@
+using System;
+using System.Linq;
+using System.Text;
+using static System.Math;
+using System.Diagnostics;
+using System.Globalization;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using static System.Numerics.Vector;
+using System.Runtime.InteropServices.ComTypes;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+       
+
+        static void Main(string[] args)
+        {
+            
+           int n=int.Parse( Console.ReadLine());
+
+            int[,] arr = new int[n, n];
+            int cnt = 1;
+            for(int i = 0; i <n; i++)
+            {
+                for(int j = 0; j < n; j++)
+                {
+                    arr[j, i] = cnt++;
+                }
+
+            }
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.Write("{0,4}",arr[i, j]); //4 mean number of space
+                }
+                Console.WriteLine("\n");
+
+            }
+
+        }
+    }
+}

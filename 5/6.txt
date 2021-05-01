@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp9
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            res.Clear();
+
+            int ans =  int.Parse(first.Text) + int.Parse(second.Text);
+            res.Text = ans+"";
+            
+        }
+
+        private void sub_Click(object sender, EventArgs e)
+        {
+            res.Clear();
+
+            int ans = int.Parse(first.Text) - int.Parse(second.Text);
+            res.Text = ans + "";
+
+        }
+        private void div_Click(object sender, EventArgs e)
+        {
+            res.Clear();
+
+            if (int.Parse(second.Text) != 0)
+            {
+                int ans = int.Parse(first.Text) / int.Parse(second.Text);
+                res.Text = ans + "";
+            }
+            else res.Text = "erros";
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            res.Clear();
+
+            int ans = int.Parse(first.Text) * int.Parse(second.Text);
+            res.Text = ans + "";
+        }
+
+    }
+}

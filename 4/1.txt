@@ -1,0 +1,20 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare n");
+            string str =ReadLine();
+
+
+            //if (str.Length < 20)
+               str= str.PadRight(20, '*');
+            WriteLine(str);
+        }
+    }
+}

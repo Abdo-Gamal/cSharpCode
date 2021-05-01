@@ -1,0 +1,48 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class StringToUnicodeCharLiteral
+
+    {
+        static string Encrypt(string str, string key)
+        {
+            StringBuilder tem = new StringBuilder();
+            
+            for (int i = 0; i < str.Length; i++)
+            {
+                tem.Append ((char)(str[i] ^ (key[i%key.Length])));
+
+            }
+              return tem.ToString();
+        }
+        static string Decrypt(string str, string key)
+        {
+            return Encrypt(str, key);
+
+        }
+
+        static void Main()
+        {
+            Write("Enter str ");
+
+            string str = ReadLine();
+            Write("Enter key ");
+            string key = ReadLine();
+
+            Console.WriteLine("\nEncryption: {0}", Encrypt(str, key));
+            string Encr = Encrypt(str, key);
+
+            Console.WriteLine("\nEncryption + decryption: {0}\n", Decrypt(Encr, key));
+        }
+
+
+    }
+}
+
+

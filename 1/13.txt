@@ -1,0 +1,23 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace sheet1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            //y = ax3 + 7
+            string str = Console.ReadLine();
+            int a = Convert.ToInt32(str);
+
+            Console.Write(a*3+7);
+
+          
+
+
+        }
+    }
+}

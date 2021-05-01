@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+
+
+        static void Main()
+        {
+            WriteLine("enter any digit ):");
+            Byte x = Convert.ToByte(ReadLine());
+
+            switch(x)
+            {
+                case 0:
+                    WriteLine(" {0} in English is zero", x);
+                    break;
+                case 1:
+                    WriteLine(" {0} in English is one ", x);
+                    break;
+                case 2:
+                    WriteLine(" {0} in English is two ", x);
+                    break;
+                case 3:
+                    WriteLine(" {0} in English is tree ", x);
+                    break;
+                case 4:
+                    WriteLine(" {0} in English is four ", x);
+                    break;
+                case 5:
+                    WriteLine(" {0} in English is five ", x);
+                    break;
+                case 6:
+                    WriteLine(" {0} in English is six ", x);
+                    break;
+                case 7:
+                    WriteLine(" {0} in English is **** ", x);
+                    break;
+                case 8:
+                    WriteLine(" {0} in English is **** ", x);
+                    break;
+                case 9:
+                    WriteLine(" {0} in English is **** ", x);
+                    break;
+            }
+
+        }
+    }
+}

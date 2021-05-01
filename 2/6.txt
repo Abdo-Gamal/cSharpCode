@@ -1,0 +1,31 @@
+using System;
+using System.Runtime.InteropServices.ComTypes;
+using static System.Console;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("entare n");
+            int n = int.Parse(ReadLine());
+
+            n = n * 2 + 1;
+          for(int i = 0; i<n; i++)
+            {
+
+                for(int j = 0; j < n; j++)
+                {
+                     if (i == n / 2 && j == n / 2)
+                        Write("O");
+                    else if (i == j || j + i == n-1||i==n/2||j==n/2)
+                        Write("*");
+
+                    else
+                        Write(" ");
+                }
+                WriteLine ();
+            }
+        }
+    }
+}
